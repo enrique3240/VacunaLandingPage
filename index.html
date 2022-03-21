@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html lang="es-mx" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/commonstyle.css" />
+    <link rel="stylesheet" href="./css/indexstyle.css" />
+    <script src="https://kit.fontawesome.com/cc60e72b8a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Landing Page Vacunación</title>
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <header>
+        <section class="navigation">
+            <div class="logo">
+                <span class="text-logo">Vacunación</span>
+            </div>
+            <div class="navigation-menu">
+                <ul class="navigation-list">
+                    <li class="navigation-item-list">
+                        <a href="#">Base de Datos</a>
+                    </li>
+                    <li class="navigation-item-list">
+                        <a href="#">Educación</a>
+                    </li>
+                    <li class="navigation-item-list">
+                        <a href="#">Noticias</a>
+                    </li>
+                    <li class="navigation-item-list">
+                        <a href="#">Regulación</a>
+                    </li>
+                </ul>
+                <button class="main-button" id="main-button">Caza Mitos</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!--Contenedor principal, 2 columnas -->
+        <section class="main-content">
+            <!--Contenedor de la primera columna-->
+            <div class="first-column-container">
+                <!--Encabezado-->
+                <div class="sub-container main-text-container">
+                    <h1 class="main-header-text">Combate al Virus con Vacunas</h1>
+                    <span class="common-text">
+                        Detengamos esta pandemia eliminando al virus con una vacuna, no permitas que tu familia ni tú se
+                        infecten
+                    </span>
+                    <div class="icon-text-container icon-text-container-yellow">
+                        <div class="icon-text">
+                            <div class="icon-background icon-background-yellow small-icon">
+                                <i class="fa-solid fa-shield-virus"></i>
+                            </div>
+                            <span>Mejor protección</span>
+                        </div>
+                        <div class="icon-text">
+                            <div class="icon-background icon-background-yellow small-icon">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>Vacunas seleccionadas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calendarización -->
+                <div class="schedule-vaccine-container">
+                    <div class="schedule icon-text">
+                        <div class="icon-background small-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <span>Calendariza tu vacunación</span>
+                    </div>
+                    <!--Tabla de detalles de vacunación-->
+                    <div class="schedule-details">
+                        <table>
+                            <thead>
+                                <th class="column-icon">
+                                    <div class="icon-background small-icon"><i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                </th>
+                                <th class="column-title">Ubicación</th>
+                                <th class="column-icon">
+                                    <div class="icon-background small-icon"><i class="fa-solid fa-calendar-days"></i>
+                                    </div>
+                                </th>
+                                <th class="column-title">Fecha</th>
+                                <th class="column-icon">
+                                    <div class="icon-background small-icon"><i class="fa-solid fa-syringe"></i></div>
+                                </th>
+                                <th class="column-title">Tipo de Vacuna</th>
+                            </thead>
+                            <tbody>
+                                <td></td>
+                                <td>Ciudad de México</td>
+                                <td></td>
+                                <td>24 mayo 2022</td>
+                                <td></td>
+                                <td>AstraZeneca</td>
+                            </tbody>
+                        </table>
+                        <button class="main-button schedule-button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Contenedor segunda columna-->
+            <div>
+                <picture class="img-nurse">
+                    <source srcset="./img/nurse.jpg" media="screen and {max-width:400px}">
+                    <img class="img-nurse" src="./img/nurse.jpg" alt="Nurse picture">
+                </picture>
+            </div>
+
+        </section>
+    </main>
+
+    <!--Banner con logos-->
+    <section class="logo-vaccines">
+        <img src="./img/astrazeneca.png" alt="AstraZeneca Logo">
+        <img src="./img/sinovac.png" alt="Sinovac Logo">
+        <img src="./img/pfizer.png" alt="Pfizer Logo">
+        <img src="./img/moderna.png" alt="Moderna Logo">
+    </section>
+
+    <!--CONTENEDOR DE RAZONES PARA VACUNARSE-->
+    <section class="reasons-container">
+        <h1 class="main-subheader-text">¿Por qué debería vacunarme?</h1>
+        <p class="common-text">Para evitar cualquier duda acerca de la obtención de la vacuna contra COVID-19,
+            identifica los 4 beneficios siguientes de la vacunación contra COVID-19:</p>
+    </section>
+    <!--Contenedor de tarjetas de información-->
+    <section class="cards-container secondary-container">
+        <div class="facts-container">
+            <div class="facts-content">
+                <div class="icon-background medium-icon"><i class="fa-solid fa-viruses"></i></div>
+                <h2 class="facts-header">Minimiza la propagación de los virus</h2>
+                <span class="common-text facts-text">La vacuna se ha demostrado efectiva para prevenir a alguien de ser
+                    infectado con Coronavirus</span>
+            </div>
+
+        </div>
+        <div class="facts-container">
+            <div class="facts-content">
+                <div class="icon-background medium-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                <h2 class="facts-header">Genera anticuerpos</h2>
+                <span class="common-text facts-text">La vacuna contra COVID-19 ha sido probada para ayudar a dar forma a
+                    la respuesta de los anticuerpos del sistema inmune</span>
+            </div>
+
+        </div>
+        <div class="facts-container">
+            <div class="facts-content">
+                <div class="icon-background medium-icon"><i class="fa-solid fa-people-group"></i></div>
+                <h2 class="facts-header">Protege a la gente cercana</h2>
+                <span class="common-text facts-text">Los beneficios de la vacunación contra COVID-19 son que las vacunas
+                    que obtenemos pueden ayudar también para proteger a la gente a nuestro alrededor</span>
+            </div>
+
+        </div>
+        <div class="facts-container">
+            <div class="facts-content">
+                <div class="icon-background medium-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h2 class="facts-header">Crea inmunidad grupal</h2>
+                <span class="common-text facts-text">La vacunación contra COVID-19 también es benéfica para crear
+                    inmunidad grupal o inmunidad de rebaño</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Tercera Sección-->
+    <section class="main-content preparing-section">
+        <!--Imagen en primera columna-->
+        <div>
+            <picture class="img-nurse">
+                <source srcset="./img/nurse_alt.jpg" media="screen and {max-width:400px}">
+                <img class="img-nurse" src="./img/nurse_alt.jpg" alt="Nurse picture">
+            </picture>
+        </div>
+
+        <div class="first-column-container">
+
+            <div class="sub-container main-text-container preparation-content">
+                <h1 class="main-subheader-text">Preparativos antes de vacunarse</h1>
+                <span class="common-text">
+                    El éxito de las vacunas está fuertemente influenciado por la fortaleza del sistema inmune del
+                    cuerpo.
+                    Por lo tanto, hay muchas cosas que pueden intentarse para hacer que la vacuna contra COVID-19
+                    funcione:
+                </span>
+            </div>
+
+            <div class="sub-container main-text-container recommendation-container">
+
+                <div class="recommendation-box">
+                    <div class="recommendation-header-content">
+                        <div class="icon-text icon-text-recommendation">
+                            <div class="icon-background small-icon">
+                                <i class="fa-solid fa-wine-bottle"></i>
+                            </div>
+                            <span class="recommendation-header-text">Evita las bebidas alcohólicas</span>
+                        </div>
+                        <button class="toggle-button icon-background" id="toggle-button1" title="toggleb"><i
+                                class="fa-solid fa-caret-up triangle"></i></button>
+                    </div>
+                    <div class="recommendation-content" id="recommendation-content1">
+                        <span class="common-text recommendation-text">El consumo de bebidas alcohólicas puede tener
+                            un impacto negativo en la efectividad de la vacuna contra COVID-19. Se recomienda no
+                            consumirlas después de la aplicación de la vacuna.</span>
+                    </div>
+                </div>
+
+                <div class="recommendation-box">
+                    <div class="recommendation-header-content">
+                        <div class="icon-text icon-text-recommendation">
+                            <div class="icon-background small-icon">
+                                <i class="fa-solid fa-notes-medical"></i>
+                            </div>
+                            <span class="recommendation-header-text">Evita el estrés</span>
+                        </div>
+                        <button class="toggle-button icon-background" id="toggle-button2" title="toggleb"><i
+                                class="fa-solid fa-caret-up triangle"></i></button>
+                    </div>
+                    <div class="recommendation-content" id="recommendation-content2">
+                        <span class="common-text recommendation-text">El estrés tiene un efecto profundo en la función
+                            inmune. Además, el estrés prolongado puede incrementar la producción de cortisol y de estrés
+                            oxidativo en el cuerpo.</span>
+                    </div>
+                </div>
+
+                <div class="recommendation-box">
+                    <div class="recommendation-header-content">
+                        <div class="icon-text icon-text-recommendation">
+                            <div class="icon-background small-icon">
+                                <i class="fa-solid fa-bowl-rice"></i>
+                            </div>
+                            <span class="recommendation-header-text">Come alimentos saludables</span>
+                        </div>
+                        <button class="toggle-button icon-background" id="toggle-button3" title="toggleb"><i
+                                class="fa-solid fa-caret-up triangle"></i></button>
+                    </div>
+                    <div class="recommendation-content" id="recommendation-content3">
+                        <span class="common-text recommendation-text">El consumo de alimentos saludables contribuye al
+                            fortalecimiento del sistema inmune del cuerpo, logrando que las vacunas tengan una mayor
+                            efectividad.</span>
+                    </div>
+                </div>
+
+                <div class="recommendation-box">
+                    <div class="recommendation-header-content">
+                        <div class="icon-text icon-text-recommendation">
+                            <div class="icon-background small-icon">
+                                <i class="fa-solid fa-bed"></i>
+                            </div>
+                            <span class="recommendation-header-text">Duerme lo suficiente</span>
+                        </div>
+                        <button class="toggle-button icon-background" id="toggle-button4" title="toggleb"><i
+                                class="fa-solid fa-caret-up triangle"></i></button>
+                    </div>
+                    <div class="recommendation-content" id="recommendation-content4">
+                        <span class="common-text recommendation-text">El descanso del cuerpo es primordial para mantener
+                            una vida saludable. De esa manera se puede evitar el deterioro de las funciones
+                            corporales.</span>
+                    </div>
+                </div>
+
+                <div class="recommendation-box">
+                    <div class="recommendation-header-content">
+                        <div class="icon-text icon-text-recommendation">
+                            <div class="icon-background small-icon">
+                                <i class="fa-solid fa-person-walking"></i>
+                            </div>
+                            <span class="recommendation-header-text">Ejercicio o actividad física</span>
+                        </div>
+                        <button class="toggle-button icon-background" id="toggle-button5" title="toggleb"><i
+                                class="fa-solid fa-caret-up triangle"></i></button>
+                    </div>
+                    <div class="recommendation-content" id="recommendation-content5">
+                        <span class="common-text recommendation-text">El ejercicio o actividad física, aunado a la buena
+                            alimentación, ayuda a disminuir el nivel de estrés corporal. Por lo tanto, el cuerpo puede
+                            mantener niveles óptimos del sistema inmune.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección final-->
+    <section class="main-content emergency-container">
+        <div class="first-column-container">
+            <!--Encabezado-->
+            <div class="sub-container main-text-container emergency-content">
+                <h1 class="main-subheader-text">Contactos de emergencia</h1>
+                <span class="common-text">
+                    Contacta a alguno de los contactos debajo si tú o tu familia se sienten mal y tienen síntomas
+                    similares al COVID-19,
+                    asegúrate que también te cuidas antes de reportárnoslo:
+                </span>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-details">
+                    <div class="emergency-icon-text">
+                        <div class="icon-background medium-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="contact-text-container">
+                            <span class="contact-text-title">Llama ahora</span>
+                            <span class="common-text common-text-small">800 123 4567</span>
+                        </div>
+                    </div>
+                    <button class="main-button button-disabled">Llama ahora</button>
+                </div>
+
+                <div class="contact-details">
+                    <div class="emergency-icon-text">
+                        <div class="icon-background medium-icon">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </div>
+                        <div class="contact-text-container">
+                            <span class="contact-text-title">Chat</span>
+                            <span class="common-text common-text-small">800 123 4567</span>
+                        </div>
+                    </div>
+                    <button class="main-button button-disabled">Chatear ahora</button>
+                </div>
+
+                <div class="contact-details">
+                    <div class="emergency-icon-text">
+                        <div class="icon-background medium-icon">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <div class="contact-text-container">
+                            <span class="contact-text-title">Videollamada</span>
+                            <span class="common-text common-text-small">800 123 4567</span>
+                        </div>
+                    </div>
+                    <button class="main-button button-disabled">Videollamar ahora</button>
+                </div>
+
+                <div class="contact-details">
+                    <div class="emergency-icon-text">
+                        <div class="icon-background medium-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-text-container">
+                            <span class="contact-text-title">Mensaje</span>
+                            <span class="common-text common-text-small">800 123 4567</span>
+                        </div>
+                    </div>
+                    <button class="main-button button-disabled">Mensajea ahora</button>
+                </div>
+
+            </div>
+        </div>
+<!--Imagen en segunda columna-->
+        <div>
+            <picture class="img-nurse">
+                <source srcset="./img/nurse_male.jpg" media="screen and {max-width:400px}">
+                <img class="img-nurse" src="./img/nurse_male.jpg" alt="Nurse picture">
+            </picture>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <!--Contenedor principal-->
+    <div class="footer-container">
+        <!--Contenedor superior del footer-->
+        <div class="footer-top-container">
+            <div class="footer-subcontainer">
+                <span class="text-logo">Vacunación</span>
+                <span class="common-text common-text-small">Nuestra meta es ayudar a liberar al mundo de la pandemia en
+                    curso.</span>
+            </div>
+            <div class="footer-menu-container">
+                <div class="footer-subcontainer">
+                    <span class="footer-menu-title">Acerca</span>
+                    <a href="#">Acerca de nosotros</a>
+                    <a href="#">Características</a>
+                    <a href="#">Noticias y blog</a>
+                </div>
+                <div class="link-container footer-subcontainer">
+                    <span class="footer-menu-title">Compañía</span>
+                    <a href="#">¿Cómo trabajamos?</a>
+                    <a href="#">Capital</a>
+                    <a href="#">Seguridad</a>
+                </div>
+                <div class="link-container footer-subcontainer">
+                    <span class="footer-menu-title">Soporte</span>
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Centro de Soporte</a>
+                    <a href="#">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legalnotes">
+            <span>2022 Vacunación. Todos los derechos reservados</span>
+            <div>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

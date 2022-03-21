@@ -1,0 +1,478 @@
+:root {
+    --blue-color: rgb(31, 62, 114);
+    --gray-color: rgb(109, 129, 147);
+    --icon-blue-color: rgb(42, 74, 200);
+    --icon-yellow-color: rgb(255, 208, 16);
+    --light-blue-color: rgb(222, 229, 253);
+    --light-yellow-color: rgb(255, 245, 220);
+}
+
+/*Contenedor principal, dos columnas*/
+.main-content {
+    align-items: stretch;
+    columns: 2;
+    display: flex;
+    min-width: 750px;
+    width: 100%;
+}
+
+/*Imagen de enfermeros*/
+.img-nurse {
+    height: 100%;
+    min-width: 750px;
+    width: 100%;
+}
+
+/*Evitar drag de imágenes*/
+img {
+    -webkit-user-drag: none;
+}
+
+/*Contenedor de la primera columna*/
+.first-column-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-width: 700px;
+    width: 100%;
+}
+
+/*Sub elementos de la primera columna*/
+.sub-container {
+    height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*Texto principal de la página*/
+.main-text-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-right: 25%;
+    padding: 15px;
+}
+
+/*Tamaños de los textos del encabezado principal*/
+.main-header-text {
+    color: var(--blue-color);
+    font-family: Alma;
+    font-size: 75px;
+}
+
+/*Subtítulos*/
+.main-subheader-text {
+    color: var(--blue-color);
+    font-family: Alma;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+/*Definición del tamaño de los iconos*/
+.fa-solid {
+    height: 20px;
+    width: 20px;
+}
+
+/*Estilo de los iconos*/
+.icon-text-container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 25%;
+    margin-top: 10%;
+}
+
+/*Contenedor de icono y texto*/
+.icon-text {
+    align-items: center;
+    color: var(--blue-color);
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between;
+
+}
+
+/*Coloración de iconos en azul*/
+.schedule i,
+.icon-text-container i, .emergency-icon-text i {
+    color: var(--icon-blue-color);
+}
+
+/*Fondo de iconos*/
+.icon-background {
+    align-items: center;
+    background-color: var(--light-blue-color);
+    border-radius: 3px;
+    box-shadow: 3px 3px 4px rgb(128 128 128 / 34%);
+    color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Fondo de los iconos en amarillo*/
+.icon-background-yellow {
+    background-color: var(--light-yellow-color);
+}
+
+/*Icono en amarillo*/
+.icon-text-container-yellow i {
+    color: var(--icon-yellow-color);
+}
+
+/*Tamaño de iconos pequeños*/
+.small-icon {
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/*Tamaño de iconos medianos*/
+.medium-icon {
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+}
+
+/*Estilo del apartado de calendarización*/
+.schedule {
+    margin-bottom: 200px;
+    margin-left: 100px;
+    z-index: 2;
+}
+
+/*Estilo del texto del apartado de calendarización*/
+.schedule span {
+    color: --blue-color;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/*Estilo de los detalles de la calendarización*/
+/*Tabla que muestra el lugar, la fecha y tipo de vacuna*/
+.schedule-details {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    margin-left: 120px;
+    padding-right: 50px;
+    position: absolute;
+    width: 60%;
+    z-index: 2;
+}
+
+/*Contenido de las celdas de la tabla de calendarización*/
+.schedule-details td {
+    color: var(--blue-color);
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/*Columna de iconos*/
+.column-icon {
+    width: 20px;
+}
+
+/*Encabezado de las columnas de la tabla de calendarización*/
+.column-title {
+    color: var(--gray-color);
+    font-family: Fmenu;
+    font-size: 26px;
+    text-align: left;
+}
+
+/*Contenedor de la calendarización*/
+.schedule-vaccine-container {
+    align-items: flex-end;
+    display: flex;
+    height: 20%;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+
+/*Tamaño del botón de la calendarización*/
+.schedule-button {
+    width: 150px;
+}
+
+/*Logos de las vacunas que se muestran debajo de la calendarización*/
+.logo-vaccines {
+    align-items: center;
+    display: flex;
+    height: 250px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/*Detalles de cada logo de las vacunas*/
+.logo-vaccines img {
+    filter: grayscale(90%) blur(1px);
+    height: 75%;
+    opacity: 66%;
+}
+
+/*Animación de los logos de las vacunas*/
+.logo-vaccines img:hover {
+    animation-duration: 0.25s;
+    filter: grayscale(0%) blur(0px);
+    opacity: 100%;
+    transform: translateY(-10px);
+    transition-duration: 0.1s;
+}
+
+/*Contenedor del apartado de razones para vacunarse*/
+.reasons-container {
+    margin-left: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 40%;
+}
+
+/*Contenedor de cada tarjeta de información del apartado de las razones para vacunarse*/
+.cards-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Contenedor de los detalles de los beneficios de vacunarse*/
+.facts-container {
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 2px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    width: 20%;
+}
+
+/*Contenido de cada tarjeta de los beneficios de vacunarse*/
+.facts-content {
+    display: flex;
+    flex-flow: column;
+    margin: 25px;
+}
+
+/*Animación de las tarjetas de beneficios de vacunarse*/
+.facts-container:hover {
+    box-shadow: 4px 4px 4px 3px rgba(34, 55, 100, 0.66);
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+/*Encabezado de las tarjetas de beneficios de vacunarse*/
+.facts-header {
+    color: var(--blue-color);
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/*Texto de las tarjetas de beneficios de vacunarse*/
+.facts-text {
+    font-size: 16px;
+}
+
+/*Contenedor de la sección de preparación para las vacunas y de 
+la sección de emergencias*/ 
+.preparing-section, .emergency-container {
+    margin-top: 50px;
+}
+
+/*Contenido de la sección de preparación para las vacunas*/
+.preparation-content {
+    height: 35%;
+    align-items: flex-end;
+}
+
+/*Sección de recomendaciones*/
+.recommendation-container {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    width: 50%;
+}
+
+/*Recuadros de cada recomendación*/
+.recommendation-box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 2px rgba(34, 55, 100, 0.66);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+
+.icon-text-recommendation div {
+    margin-right: 25px;
+}
+
+/*Contenedor del encabezado de cada recuadro de recomendación*/
+.recommendation-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    height: 35px;
+}
+
+/*Encabezado de recuadro de recomendación*/
+.recommendation-header-text {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/*Texto de recomendación*/
+.recommendation-text {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*Contenedor del texto de recomendación*/
+.recommendation-content {
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+/*Botón que se muestra al final del encabezado de cada texto de recomendación*/
+.toggle-button {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+}
+
+/*Contenedor de cada recuadro de detalles de contacto de emergencia*/
+.emergency-content {
+    height: 35%;
+}
+
+/*Estilo del botón de cada contenedor de contacto de emergencia*/
+.button-disabled {
+    background-color: rgb(200, 220, 240);
+    color: rgb(42, 76, 202);
+}
+
+/*Animación del botón de cada contenedor de contacto de emergencia*/
+.button-disabled:hover {
+    background-color: rgb(42, 76, 202);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+/*Contenedor los contactos de emergencia*/
+.contact-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 75%;
+}
+
+/*Recuadro con detalles de contacto de emergencia*/
+.contact-details {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(109, 125, 153, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    justify-content: space-evenly;
+    width: 35%;
+}
+
+/*Organización del icono y texto del contacto de emergencia*/
+.emergency-icon-text {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 220px;
+}
+
+/*Contenedor del texto al costado del icono del contacto de emergencia*/
+.contact-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+
+/*Encabezado del texto del contacto de emergencia*/
+.contact-text-title {
+    color: var(--blue-color);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*Texto pequeño*/
+.common-text-small {
+    font-size: 14px;
+}
+
+/*Footer*/
+footer {
+    background-color:rgba(235, 235, 240,0.66);
+}
+
+/*Primer contenedor del footer*/
+.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/*Contenedor del menú del footer*/
+.footer-menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Fuente de los encabezados del menú del footer*/
+footer .footer-subcontainer .text-logo {
+    font-size:25px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+
+/*Subcontenedor de los elementos del footer*/
+.footer-subcontainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+}
+
+/*Tamaño de los enlaces y texto del footer*/
+.footer-subcontainer a, .footer-legalnotes a, .footer-legalnotes span {
+    color: var(--gray-color);
+    font-size: 12px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+/*Títulos del menú del footer*/
+.footer-menu-title {
+    color: var(--blue-color);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/*Notas legales del footer*/
+.footer-legalnotes {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right:100px;
+}
